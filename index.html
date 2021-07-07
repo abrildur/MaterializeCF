@@ -2,7 +2,7 @@
   <html>
     <head>
       <meta charset="utf-8">
-      <title>Curso Materializecss</title>
+      <title>Curso Materializecss: Grid</title>
        <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">            
       <!--Import Google Icon Font-->
@@ -15,7 +15,7 @@
     </head>
 
     <body>
-
+<!--tutorial de grid: ejemplos de codigo https://materializecss.com/grid.html y en el curso de codigo facilito: https://codigofacilito.com/videos/tutoriales_materialize_navbar --->
             <nav>
             <div class="nav-wrapper">
               <a href="#" class="brand-logo">Materializecss</a>
@@ -27,8 +27,49 @@
             </div>
           </nav>
         
+        <!--container ---><!--offset es para ponerlo en el lado derecho
+        <div class="container">
+          <div class="row">
+             <div class="col m12">
+               <div class="card-panel teal"> </div>
+             </div>
+             <div class="col m6 offset-m6"> 
+               <div class="card-panel pink"> </div>
+             </div>
+               <div class="row">
+      <div class="col s7 push-s7"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
+      <div class="col s5 pull-s5"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
+    </div>
+          
+          </div>
+        </div> -->
+  <div class="container">
+      <div class="row">
 
+            <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+              <!-- Grey navigation panel
 
+                    This content will be:
+                3-columns-wide on large screens,
+                4-columns-wide on medium screens,
+                12-columns-wide on small screens  -->
+                <h1>hola</h1>
+            </div>
+
+            <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+              <!-- Teal page content
+
+                    This content will be:
+                9-columns-wide on large screens,
+                8-columns-wide on medium screens,
+                12-columns-wide on small screens  -->
+                  <p>tengo un abrazo</p>
+            </div>
+
+          </div>
+  </div>
+
+          
       <!--JavaScript at end of body for optimized loading-->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
